@@ -1,113 +1,101 @@
-# petly-site
+# Petly 🐾
 
-Этот проект был создан при помощи
-[Create React App](https://github.com/facebook/create-react-app). Для знакомства
-и настройки дополнительных возможностей
-[обратись к документации](https://facebook.github.io/create-react-app/docs/getting-started).
+Welcome to Petly, the purrrfect platform for all pet lovers, owners, and those looking to adopt. Your one-stop shop to either find your new best friend or help a lost one find their way back home. Built with love, React, and Node.js, our goal is to bring smiles to both humans and their furry friends.
 
-## Создание репозитория по шаблону
+<img width="969" alt="Снимок экрана 2023-05-11 141305" src="https://github.com/kyzym/petly-site/assets/102521716/f284ff3b-67db-4ffa-aa2e-075f9d7810f9">
 
-Используй этот репозиторий организации GoIT как шаблон для создания репозитория
-своего проекта. Для этого нажми на кнопку `«Use this template»` и выбери опцию
-`«Create a new repository»`, как показано на изображении.
 
-![Creating repo from a template step 1](./assets/template-step-1.png)
+## Features 🐶
 
-На следующем шаге откроется страница создания нового репозитория. Заполни поле
-его имени, убедись что репозиторий публичный, после чего нажми кнопку
-`«Create repository from template»`.
+- User registration and account creation
+- Upload and share pet photos
+- Add pets to various categories
+  - For Sale
+  - Lost Pets
+  - Adoption (Good homes only, please 🥺)
+  
+## My Contribution 🤓
 
-![Creating repo from a template step 2](./assets/template-step-2.png)
+As a part of this wonderful team, I implemented a two-step form using Formik for data handling and Yup for form validation. This included utilizing a library for date selection and another for resizable text input. Check out the screenshots of different stages of form development!
 
-После того как репозиторий будет создан, необходимо перейти в настройки
-созданного репозитория на вкладку `Settings` > `Actions` > `General` как
-показано на изображении.
+## Technology Stack 💻
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+Petly is made possible with the help of numerous libraries and dependencies:
 
-Проскролив страницу до самого конца, в секции `«Workflow permissions»` выбери
-опцию `«Read and write permissions»` и поставь галочку в чекбоксе. Это
-необходимо для автоматизации процесса деплоя проекта.
+- React.js for UI
+- Node.js for the backend
+- Formik for handling form state
+- Yup for form validation
+- react-datepicker for date selection
+- react-textarea-autosize for resizable text input
+- Redux for state management
+- axios for promise-based HTTP requests
+- date-fns for date manipulation
+- Notiflix for notifications
+- sass for CSS preprocessor
+- uuid for unique IDs
+- styled-components for styling
+- react-redux for state management
+- react-router-dom for routing
+- redux-persist for state persistence
+- And many more...
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
+## Run Locally 🚀
 
-Теперь у тебя есть личный репозиторий проекта, со структурой файлов и папок
-репозитория-шаблона. Далее работай с ним как с любым другим личным репозиторием,
-клонируй его себе на компьютер, пиши код, делай коммиты и отправляй их на
-GitHub.
+Clone the project and navigate to the project directory. Install the dependencies and start the server.
 
-## Подготовка к работе
-
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Установи базовые зависимости проекта командой `npm install`.
-3. Запусти режим разработки, выполнив команду `npm start`.
-4. Перейди в браузере по адресу [http://localhost:3000](http://localhost:3000).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
-
-## Деплой
-
-Продакшн версия проекта будет автоматически проходить линтинг, собираться и
-деплоиться на GitHub Pages, в ветку `gh-pages`, каждый раз когда обновляется
-ветка `main`. Например, после прямого пуша или принятого пул-реквеста. Для этого
-необходимо в файле `package.json` отредактировать поле `homepage`, заменив
-`your_username` и `your_repo_name` на свои, и отправить изменения на GitHub.
-
-```json
-"homepage": "https://your_username.github.io/your_repo_name/"
+```bash
+  git clone https://github.com/your-repo-link/petly.git
+  cd petly
+  npm install
+  npm start
 ```
 
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
+## Future Roadmap 🗺️
 
-![GitHub Pages settings](./assets/repo-settings.png)
+We are not done yet! There are plans to add more categories, increase user interactions, and make the platform even friendlier for our four-legged friends.
 
-### Статус деплоя
+## Contributing 🤝
 
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
+We love to see your contributions! Whether it's a bug report, feature suggestion, or a pull request, all are welcome!
 
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
+## Acknowledgements 🙏
 
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
-
-![Deployment status](./assets/deploy-status.png)
-
-### Живая страница
-
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
-
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение свойства `homepage` в файле `package.json`.
-
-### Маршрутизация
-
-Если приложение использует библиотеку `react-router-dom` для маршрутизации,
-необходимо дополнительно настроить компонент `<BrowserRouter>`, передав в пропе
-`basename` точное название твоего репозитория. Слеш в начале строки обязателен.
+Big thanks to our team for their hard work and commitment. And to all the pets out there, thank you for being the best part of our lives 🐕🐈🐇🦜
 
 ```jsx
-<BrowserRouter basename="/your_repo_name">
-  <App />
-</BrowserRouter>
+return (
+  <h1>
+    We Love Pets 🐾
+  </h1>
+);
 ```
 
-## Как это работает
+Remember, be kind to every kind. Not just mankind 🌍🐾
 
-![How it works](./assets/how-it-works.png)
+## Screenshots 📸
+<div align="center">
+<!-- ![Снимок экрана 2023-05-11 140320](https://github.com/kyzym/petly-site/assets/102521716/bd2b08d8-9e84-4e35-8af5-497cb3cabcf8)
+![Снимок экрана 2023-05-11 140731](https://github.com/kyzym/petly-site/assets/102521716/63528449-27c7-4c10-9bfb-96f4ef5ae442)
+![Снимок экрана 2023-05-11 140847](https://github.com/kyzym/petly-site/assets/102521716/0c1935ea-2cdb-4972-ac95-6e066208b640)
+![Снимок экрана 2023-05-11 140906](https://github.com/kyzym/petly-site/assets/102521716/10368d67-50dd-481b-a40a-b147a467087c)
+![Снимок экрана 2023-05-11 141305](https://github.com/kyzym/petly-site/assets/102521716/bd9665c7-551e-460f-8062-169bc876d597)
+![Снимок экрана 2023-05-11 141738](https://github.com/kyzym/petly-site/assets/102521716/6c174e22-c10c-4c4e-bea1-e03a89658fc7)
+![Снимок экрана 2023-05-11 142341](https://github.com/kyzym/petly-site/assets/102521716/248bb308-b943-43b9-8262-8fa0d48122b5)
+![Снимок экрана 2023-05-11 142401](https://github.com/kyzym/petly-site/assets/102521716/9a3bff3d-3f14-43c9-b6ca-0f1316c1e2da) -->
 
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит линтинг и сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+
+<img src="https://github.com/kyzym/petly-site/assets/102521716/609d31a0-7344-4139-ac22-f970bb3dbcf6" height="330px;" alt="Screenshot 1">
+<img src="https://github.com/kyzym/petly-site/assets/102521716/822d6331-9b86-47b4-853c-6a0ad515e8c0"   height="330px;" alt="Screenshot 2">
+<img src="https://github.com/kyzym/petly-site/assets/102521716/bd2b08d8-9e84-4e35-8af5-497cb3cabcf8"   height="330px;" alt="Screenshot 3">
+  <img src="https://github.com/kyzym/petly-site/assets/102521716/63528449-27c7-4c10-9bfb-96f4ef5ae442"   height="330px;" alt="Screenshot 4">
+  <img src="https://github.com/kyzym/petly-site/assets/102521716/0c1935ea-2cdb-4972-ac95-6e066208b640"   height="330px;" alt="Screenshot 5">
+  <img src="https://github.com/kyzym/petly-site/assets/102521716/10368d67-50dd-481b-a40a-b147a467087c"   height="330px;" alt="Screenshot 6">
+  <img src="https://github.com/kyzym/petly-site/assets/102521716/bd9665c7-551e-460f-8062-169bc876d597"   height="330px;" alt="Screenshot 7">
+  <img src="https://github.com/kyzym/petly-site/assets/102521716/6c174e22-c10c-4c4e-bea1-e03a89658fc7"   height="330px;" alt="Screenshot 8">
+  <img src="https://github.com/kyzym/petly-site/assets/102521716/248bb308-b943-43b9-8262-8fa0d48122b5"   height="330px;" alt="Screenshot 9">
+  <img src="https://github.com/kyzym/petly-site/assets/102521716/9a3bff3d-3f14-43c9-b6ca-0f1316c1e2da"   height="330px;" alt="Screenshot 10">
+
+
+</div>
+
