@@ -40,16 +40,6 @@ Petly is made possible with the help of numerous libraries and dependencies:
 - redux-persist for state persistence
 - And many more...
 
-## Run Locally 🚀
-
-Clone the project and navigate to the project directory. Install the dependencies and start the server.
-
-```bash
-  git clone https://github.com/your-repo-link/petly.git
-  cd petly
-  npm install
-  npm start
-```
 
 ## Future Roadmap 🗺️
 
