@@ -9,7 +9,6 @@ import { PrivateRoute } from './PravateRoute/PrivateRoute';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loader from './Loader/Loader';
-// import { Animation } from './Animation/Animation';
 
 const Home = lazy(() => import('pages/Home/Home'));
 const NewsPage = lazy(() => import('pages/NewsPage/NewsPage'));
@@ -33,12 +32,7 @@ export const App = () => {
               <Route path="/news" element={<NewsPage />} />
               <Route
                 path="/notices/:category"
-                element={
-                  <ConditionalRoutes
-                    redirectTo="/user"
-                    component={<NoticesPage />}
-                  />
-                }
+                element={<ConditionalRoutes component={<NoticesPage />} />}
               />
               <Route path="/friends" element={<OurFriendsPage />} />
               <Route
