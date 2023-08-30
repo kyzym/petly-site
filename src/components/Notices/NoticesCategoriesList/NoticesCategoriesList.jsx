@@ -19,49 +19,53 @@ const NoticesCategoriesList = ({ category, onClose }) => {
     <>
       {category === 'sell' && (
         <StyledList>
-          {notices.map(notice => (
-            <NoticeCategoryItem
-              key={notice._id}
-              notice={notice}
-              onClose={onClose}
-            ></NoticeCategoryItem>
-          ))}
+          {notices &&
+            notices.map(notice => (
+              <NoticeCategoryItem
+                key={notice._id}
+                notice={notice}
+                onClose={onClose}
+              ></NoticeCategoryItem>
+            ))}
         </StyledList>
       )}
 
       {category === 'lost-found' && (
         <StyledList>
-          {notices.map(notice => (
-            <NoticeCategoryItem
-              key={notice._id}
-              notice={notice}
-              onClose={onClose}
-            ></NoticeCategoryItem>
-          ))}
+          {notices &&
+            notices.map(notice => (
+              <NoticeCategoryItem
+                key={notice._id}
+                notice={notice}
+                onClose={onClose}
+              ></NoticeCategoryItem>
+            ))}
         </StyledList>
       )}
 
       {category === 'for-free' && (
         <StyledList>
-          {notices.map(notice => (
-            <NoticeCategoryItem
-              key={notice._id}
-              notice={notice}
-              onClose={onClose}
-            ></NoticeCategoryItem>
-          ))}
+          {notices &&
+            notices.map(notice => (
+              <NoticeCategoryItem
+                key={notice._id}
+                notice={notice}
+                onClose={onClose}
+              ></NoticeCategoryItem>
+            ))}
         </StyledList>
       )}
 
       {category === 'own' && (
         <StyledList>
-          {ownNotices.map(notice => (
-            <NoticeCategoryItem
-              key={notice._id}
-              notice={notice}
-              onClose={onClose}
-            ></NoticeCategoryItem>
-          ))}
+          {ownNotices &&
+            ownNotices.map(notice => (
+              <NoticeCategoryItem
+                key={notice._id}
+                notice={notice}
+                onClose={onClose}
+              ></NoticeCategoryItem>
+            ))}
         </StyledList>
       )}
       {category === 'own' && !ownNotices.length && (
@@ -72,13 +76,14 @@ const NoticesCategoriesList = ({ category, onClose }) => {
 
       {category === 'favorite' && (
         <StyledList>
-          {favorites.map(notice => (
-            <NoticeCategoryItem
-              key={notice._id}
-              notice={notice}
-              onClose={onClose}
-            ></NoticeCategoryItem>
-          ))}
+          {favorites &&
+            favorites.map(notice => (
+              <NoticeCategoryItem
+                key={notice._id}
+                notice={notice}
+                onClose={onClose}
+              ></NoticeCategoryItem>
+            ))}
         </StyledList>
       )}
       {category === 'favorite' && !favorites.length && (
