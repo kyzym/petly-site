@@ -42,6 +42,8 @@ const NewsPage = () => {
       item.title.toLowerCase().includes(newsTitle.toLowerCase()),
     );
 
+  console.log(visibleNews);
+
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;

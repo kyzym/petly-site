@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import defaultImage from 'img/no-image.JPG';
-import { NO_DATA } from 'utils/constans';
+import { NO_DATA } from 'utils/constants';
 import {
   Friend,
   Name,

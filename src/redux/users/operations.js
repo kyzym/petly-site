@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import { BASE_URL } from 'utils/constants';
 
-axios.defaults.baseURL = `https://petly-site-back.up.railway.app`;
+axios.defaults.baseURL = BASE_URL;
 
 export const fetchUser = createAsyncThunk('/user', async (_, { thunkAPI }) => {
   try {

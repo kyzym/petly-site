@@ -1,6 +1,5 @@
 import axios from 'axios';
-
-const BASE_URL = `https://petly-site-back.up.railway.app`;
+import { BASE_URL } from 'utils/constants';
 
 export async function fetchNoticeById(noticeId) {
   const url = `${BASE_URL}/notices/noticeId/${noticeId}`;

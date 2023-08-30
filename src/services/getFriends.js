@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { toast } from 'react-toastify';
-
-const BASE_URL = `https://petly-site-back.up.railway.app`;
+import { BASE_URL } from 'utils/constants';
 
 export async function fetchFriends() {
   const url = `${BASE_URL}/servicessidebar`;

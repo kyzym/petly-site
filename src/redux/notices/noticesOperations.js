@@ -1,8 +1,9 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+import { BASE_URL } from 'utils/constants';
 import { showToastInfo } from 'utils/showTost';
 
-axios.defaults.baseURL = `https://petly-site-back.up.railway.app`;
+axios.defaults.baseURL = BASE_URL;
 
 export const fetchNoticesByCategory = createAsyncThunk(
   'notices/fetchByCategory',
