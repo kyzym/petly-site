@@ -25,7 +25,7 @@ export const App = () => {
   return (
     <>
       <Container>
-        <Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<SharedLayout />}>
               <Route index element={<Home />} />
