@@ -32,25 +32,25 @@ const NoticesPage = () => {
 
   useEffect(() => {
     // list of functions
-    const searchNoticeByCategory = () => {
+    const searchNoticeByCategory = async () => {
       try {
-        dispatch(fetchNoticesByCategory(category));
+        await dispatch(fetchNoticesByCategory(category));
       } catch (error) {
         console.log(error);
       }
     };
 
-    const searchNoticesByOwner = () => {
+    const searchNoticesByOwner = async () => {
       try {
-        dispatch(fetchNoticesByOwner());
+        await dispatch(fetchNoticesByOwner());
       } catch (error) {
         console.log(error);
       }
     };
 
-    const searchFavoriteNotices = () => {
+    const searchFavoriteNotices = async () => {
       try {
-        dispatch(fetchFavoriteNotices());
+        await dispatch(fetchFavoriteNotices());
       } catch (error) {
         console.log(error);
       }

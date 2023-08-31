@@ -11,7 +11,7 @@ export const noticeLabelTranform = category => {
       categoryToDisplay = 'In good hands';
       break;
     default:
-      categoryToDisplay = 'asdsSell';
+      categoryToDisplay = 'Sell';
   }
   return categoryToDisplay;
 };

@@ -1,4 +1,4 @@
-import img from './img/dogHhead.png';
+import img from './img/dogsHead.png';
 import { Container, DogHead, Txt, Img } from './Loader.styled';
 
 const Loader = () => {

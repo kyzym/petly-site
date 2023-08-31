@@ -85,7 +85,7 @@ export const StyledTitle = styled.h2`
 
 export const StyledList = styled.ul`
   padding: 0 20px 20px 20px;
-  color: #111111; */
+  color: #111111;
 `;
 
 export const Table = styled.table`
